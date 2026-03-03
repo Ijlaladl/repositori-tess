@@ -6,11 +6,31 @@
     <title>Tech4 Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="grid grid-rows-[auto_1fr_auto] min-h-screen m-0 p-0 font-sans">
+<body class="h-screen flex flex-col font-sans">
 
-    <header id="main-header" class="grid grid-cols-1 items-center bg-slate-800 text-white p-4 h-20">
-        </header>
+     <header id="main-header" class="bg-pink-300 text-white p-4">
 
+    <div class="flex justify-between items-center">
+        <!-- Logo + Tulisan -->
+        <div class="flex flex-col items-center w-full">
+            <h1 class="text-2xl font-bold">💄 SEEL BEAUTY</h1>
+
+            <!-- Tulisan Berjalan -->
+            <div class="marquee-container text-center mt-1">
+                <div class="marquee-text font-semibold text-sm">
+                    ✨ Selamat Datang di Web Kosmetik Seel ✨
+                </div>
+            </div>
+        </div>
+
+        <!-- Keranjang -->
+        <div class="absolute right-4 top-6">
+            🛒 <span id="cart-count" class="bg-white text-pink-300 px-2 py-1 rounded-full text-xs font-bold">0</span>
+        </div>
+    </div>
+
+</header>
+  
     <div id="main-wrapper" class="grid grid-cols-5">
 
         <nav id="main-navigation" class="col-span-1 grid grid-cols-1 content-start bg-slate-100 p-4 border-r border-slate-300">
